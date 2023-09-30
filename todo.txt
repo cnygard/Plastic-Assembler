@@ -1,0 +1,60 @@
+* Add plastic to the PATH
+* Create common header with panic and conditional debug functions
+
+
+* instruction counter so I can jump by instructions
+* save state for testing
+* read8-16-32 should move ip forward themselves maybe
+
+* parse for strings
+
+* disassemble specific areas
+
+* sections
+* text secion and data section (store variable addresses)
+* variable memory
+* base pointer
+* labels
+* include other files
+* probably more instructions
+* strings
+* call inst which pushes arguments to stack and then reads off of stack
+* requires return inst
+* moves ebp to esp
+
+* set [ebp]+4 "hi"
+* loops through until it sees \0
+* reading it does the same
+* set [register]+[register]
+
+set [ebp]-4 eax
+set [ebp]-8 6
+
+ __
+| a = 6 |
+| b = 8 |
+|  |
+|  |
+|  |
+|  |
+|  |
+|  |
+|  |
+|__|
+|  |
+|  |
+|  |
+|  |
+|  |
+|  |
+|  |
+|  |
+|  |
+|  |
+|  |
+|  |
+|  |
+|  |
+|  |
+|  |
+|__|

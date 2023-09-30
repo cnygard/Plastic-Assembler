@@ -1,0 +1,14 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/cjnygard/Dev/Plastic'
+gcc -c -std=c99 -g src/bytebuffer.c -o src/bytebuffer.o
+gcc -c -std=c99 -g src/bytecode.c -o src/bytecode.o
+gcc -c -std=c99 -g src/compiler.c -o src/compiler.o
+gcc -c -std=c99 -g src/disassembler.c -o src/disassembler.o
+gcc -c -std=c99 -g src/main.c -o src/main.o
+gcc -c -std=c99 -g src/parser.c -o src/parser.o
+gcc -c -std=c99 -g src/runtime.c -o src/runtime.o
+gcc -c -std=c99 -g src/token.c -o src/token.o
+gcc -c -std=c99 -g src/util.c -o src/util.o
+gcc -g src/bytebuffer.o src/bytecode.o src/compiler.o src/disassembler.o src/main.o src/parser.o src/runtime.o src/token.o src/util.o -o Plastic
+make: Leaving directory `/Users/cjnygard/Dev/Plastic'
+ 

@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "util.h": "c",
+        "parser.h": "c",
+        "token.h": "c",
+        "compiler.h": "c",
+        "bytebuffer.h": "c",
+        "__nullptr": "cpp",
+        "stdlib.h": "c",
+        "limits.h": "c",
+        "disassembler.h": "c",
+        "runtime.h": "c",
+        "tester.h": "c",
+        "stdio.h": "c",
+        "bytecode.h": "c",
+        "stdbool.h": "c"
+    },
+    "files.exclude": {
+        "**/**.o": true
+    }
+}

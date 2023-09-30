@@ -1,0 +1,503 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Mon Sep 26 18:11:53 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+ 
+?F = $(notdir $?)
+# makefile (from `makefile', line 6)
+OBJ = ${SRC:.c=.o}
+# makefile (from `makefile', line 4)
+SRC = ${wildcard src/*.c}
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/cjnygard/Dev/Plastic
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `makefile', line 2)
+CFLAGS = -c -std=c99 -g
+# makefile (from `makefile', line 1)
+MAKEFILE_LIST :=  makefile
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `makefile', line 3)
+LDFLAGS = -g
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.4geMGizrWT/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+PWD = /Users/cjnygard/Dev/Plastic
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# makefile (from `makefile', line 5)
+HDR = ${wildcard include/*.h}
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/cjnygard
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/cjnygard/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+# environment
+LOGNAME = cjnygard
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# makefile (from `makefile', line 1)
+CC = gcc
+# makefile (from `makefile', line 7)
+EXEC = Plastic
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = cjnygard
+# makefile
+.DEFAULT_GOAL := all
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/nf/jbs6zr253192prv5ddvvbdtw0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/cjnygard/Library/Application Support/Code/1.70.2-main.sock
+# environment
+MallocNanoZone = 0
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.42432609.42432615
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 9317
+# variable set hash-table stats:
+# Load=65/1024=6%, Rehash=0, Collisions=4/102=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# include (device 16777225, inode 39385287): 10 files, no impossibilities.
+# . (device 16777225, inode 39381765): 12 files, no impossibilities.
+# src (device 16777225, inode 39385280): 20 files, no impossibilities.
+
+# 42 files, no impossibilities in 3 directories.
+
+# Implicit Rules
+
+%.o: %.c include/bytebuffer.h include/bytecode.h include/compiler.h include/disassembler.h include/parser.h include/runtime.h include/token.h include/util.h
+#  commands to execute (from `makefile', line 18):
+	${CC} ${CFLAGS} $< -o $@
+	
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+include/disassembler.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 00:43:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/disassembler.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 02:39:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+include/compiler.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-14 19:01:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/compiler.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 02:43:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+include/util.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-14 14:02:17
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/util.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-14 14:05:49
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+ 
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+all: src/bytebuffer.c src/bytecode.c src/compiler.c src/disassembler.c src/main.c src/parser.c src/runtime.c src/token.c src/util.c src/bytebuffer.o src/bytecode.o src/compiler.o src/disassembler.o src/main.o src/parser.o src/runtime.o src/token.o src/util.o Plastic
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+
+# Not a target:
+include/bytecode.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 02:36:29
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/bytecode.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 01:57:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+src/main.o: src/main.c include/bytebuffer.h include/bytecode.h include/compiler.h include/disassembler.h include/parser.h include/runtime.h include/token.h include/util.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `src/main'
+#  Last modified 2022-08-24 02:41:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `makefile', line 18):
+	${CC} ${CFLAGS} $< -o $@
+	
+
+src/bytebuffer.o: src/bytebuffer.c include/bytebuffer.h include/bytecode.h include/compiler.h include/disassembler.h include/parser.h include/runtime.h include/token.h include/util.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `src/bytebuffer'
+#  Last modified 2022-08-24 02:41:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `makefile', line 18):
+	${CC} ${CFLAGS} $< -o $@
+	
+
+# Not a target:
+include/bytebuffer.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-14 19:20:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/bytebuffer.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-14 19:27:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+include/parser.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 01:50:57
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/parser.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-09-04 23:08:07
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/runtime.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-01 21:31:25
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/main.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-14 19:12:28
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/token.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+release: all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# makefile (from `makefile', line 12)
+# CFLAGS += -DRELEASE
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+include/runtime.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 00:43:33
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/runtime.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 02:46:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+src/disassembler.o: src/disassembler.c include/bytebuffer.h include/bytecode.h include/compiler.h include/disassembler.h include/parser.h include/runtime.h include/token.h include/util.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `src/disassembler'
+#  Last modified 2022-08-24 02:41:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `makefile', line 18):
+	${CC} ${CFLAGS} $< -o $@
+	
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 21):
+	rm src/*.o ${EXEC}
+	
+
+Plastic: src/bytebuffer.o src/bytecode.o src/compiler.o src/disassembler.o src/main.o src/parser.o src/runtime.o src/token.o src/util.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 15):
+	${CC} ${LDFLAGS} $^ -o $@
+	
+
+src/compiler.o: src/compiler.c include/bytebuffer.h include/bytecode.h include/compiler.h include/disassembler.h include/parser.h include/runtime.h include/token.h include/util.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `src/compiler'
+#  Last modified 2022-08-24 02:43:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `makefile', line 18):
+	${CC} ${CFLAGS} $< -o $@
+	
+
+# Not a target:
+src/util.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/bytecode.o: src/bytecode.c include/bytebuffer.h include/bytecode.h include/compiler.h include/disassembler.h include/parser.h include/runtime.h include/token.h include/util.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `src/bytecode'
+#  Last modified 2022-08-24 02:41:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `makefile', line 18):
+	${CC} ${CFLAGS} $< -o $@
+	
+
+# Not a target:
+include/token.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 01:50:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/token.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-24 01:35:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+src/parser.o: src/parser.c include/bytebuffer.h include/bytecode.h include/compiler.h include/disassembler.h include/parser.h include/runtime.h include/token.h include/util.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `src/parser'
+#  Last modified 2022-09-04 23:00:50
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := src/parser.o
+# automatic
+# % := 
+# automatic
+# * := src/parser
+# automatic
+# + := src/parser.c include/bytebuffer.h include/bytecode.h include/compiler.h include/disassembler.h include/parser.h include/runtime.h include/token.h include/util.h
+# automatic
+# | := 
+# automatic
+# < := src/parser.c
+# automatic
+ 
+# ^ := src/parser.c include/bytebuffer.h include/bytecode.h include/compiler.h include/disassembler.h include/parser.h include/runtime.h include/token.h include/util.h
+# automatic
+# ? := src/parser.c
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/14=7%
+#  commands to execute (from `makefile', line 18):
+	${CC} ${CFLAGS} $< -o $@
+	
+
+# files hash-table stats:
+# Load=33/1024=3%, Rehash=0, Collisions=3/190=2%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Mon Sep 26 18:11:53 2022
+
+ 
