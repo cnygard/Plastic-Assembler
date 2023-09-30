@@ -15,6 +15,27 @@ This project uses only what exists in the repository and the c standard library.
 $ make
 ```
 
+## Assembling
+Assembling code written in the Plastic Assembly Language is simple. Run Plastic in the terminal with the following command:
+```shell
+$ ./Plastic -a [filepath]
+```
+where '[filepath]' is the path to the .pls file containing the Plastic code.
+
+## Disassembling
+To disassemble the out.pbc file for review, type:
+```shell
+$ ./Plastic -d out.pbc
+```
+which will output Plastic's interpretation of the bytecode file into the terminal.
+
+## Running
+To finally run the generated assembly code, type:
+```shell
+$ ./Plastic -r out.pbc
+```
+and the emulator will run the assembled bytecode.
+
 ## Writing code
 
 Plastic code is written in files ending in the .pls file extension. Each new line is a new instruction to be performed by the emulator. The instructions are formatted as:
@@ -634,24 +655,3 @@ Written as:
 hlt
 ```
 goes at the end of every program and signifies the end of the program for the assembler.
-
-## Assembling
-Assembling code written in the Plastic Assembly Language is simple. Run Plastic in the terminal with the following command:
-```shell
-$ ./Plastic -a [filepath]
-```
-where '[filepath]' is the path to the .pls file containing the Plastic code.
-
-## Disassembling
-To disassemble the out.pbc file for review, type:
-```shell
-$ ./Plastic -d out.pbc
-```
-which will output Plastic's interpretation of the bytecode file into the terminal.
-
-## Running
-To finally run the generated assembly code, type:
-```shell
-$ ./Plastic -r out.pbc
-```
-and the emulator will run the assembled bytecode.
